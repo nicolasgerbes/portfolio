@@ -1,75 +1,198 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nícolas.dev | Portfólio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="bg-slate-100 text-slate-900">
+
+    <!-- NAVBAR -->
     <nav
-        class="fixed top-4 left-1/2 z-[100] w-[95%] -translate-x-1/2 rounded-[2rem] border border-white/20 bg-white/60 backdrop-blur-2xl transition-all duration-500 hover:border-vibrant/50 dark:border-slate-800/50 dark:bg-slate-950/70 md:top-6 md:max-w-5xl shadow-[0_8px_32px_0_rgba(0,0,0,0.1)]">
+        class="fixed top-4 left-1/2 z-[100] w-[95%] -translate-x-1/2 rounded-[2rem] border border-white/20 bg-slate-700/90 backdrop-blur-2xl transition-all duration-500 md:top-6 md:max-w-6xl shadow-[0_8px_32px_0_rgba(0,0,0,0.1)]">
         <div class="mx-auto flex h-16 items-center justify-between px-6 md:h-20">
 
-            <a href="#" class="group z-[110] flex items-center gap-3">
-                <div
-                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 transition-all group-hover:rotate-[10deg] group-hover:scale-110 dark:bg-vibrant">
-                    <span class="text-lg font-black text-white dark:text-slate-950 italic">N</span>
+            <a href="#home" class="group z-[110] flex items-center gap-3">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 transition-all group-hover:rotate-[10deg] group-hover:scale-110">
+                    <span class="text-lg font-black text-white italic">N</span>
                 </div>
-                <span class="hidden text-xl font-black italic tracking-tighter text-slate-900 dark:text-white sm:block">
-                    NICOLAS<span class="animate-pulse text-vibrant">.</span>DEV
+                <span class="hidden text-xl font-black italic tracking-tighter text-white sm:block">
+                    NICOLAS.DEV
                 </span>
             </a>
 
             <div class="hidden items-center gap-1 md:flex">
-                <a href="#home"
-                    class="relative rounded-full px-5 py-2 text-sm font-bold text-slate-600 transition-all hover:text-vibrant dark:text-slate-400">
-                    Início
-                    <span
-                        class="absolute bottom-1 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-vibrant opacity-0 transition-all group-hover:opacity-100"></span>
-                </a>
-                <a href="#projetos"
-                    class="rounded-full px-5 py-2 text-sm font-bold text-slate-600 transition-all hover:text-vibrant dark:text-slate-400">Projetos</a>
+                <a href="#home" class="rounded-full px-5 py-2 text-sm font-bold text-slate-200 transition-all hover:text-white">Início</a>
+                <a href="#sobre" class="rounded-full px-5 py-2 text-sm font-bold text-slate-200 transition-all hover:text-white">Sobre mim</a>
+                <a href="#projetos" class="rounded-full px-5 py-2 text-sm font-bold text-slate-200 transition-all hover:text-white">Projetos</a>
+                <a href="#skills" class="rounded-full px-5 py-2 text-sm font-bold text-slate-200 transition-all hover:text-white">Skills</a>
 
                 <a href="#contato"
-                    class="ml-4 overflow-hidden relative group rounded-full bg-slate-950 px-8 py-2.5 text-sm font-black text-white transition-all hover:pr-10 dark:bg-white dark:text-slate-950">
-                    <span class="relative z-10">CONTATO</span>
-                    <span
-                        class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 transition-all group-hover:opacity-100 group-hover:right-3">→</span>
-                    <div
-                        class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-vibrant/20 to-transparent transition-transform duration-500 group-hover:translate-x-full">
-                    </div>
+                    class="ml-4 rounded-full bg-white px-8 py-2.5 text-sm font-black text-slate-950 transition-all hover:scale-105">
+                    CONTATO
                 </a>
             </div>
 
             <button id="menu-btn"
-                class="relative z-[110] flex h-10 w-10 flex-col items-center justify-center rounded-full bg-slate-900 dark:bg-white md:hidden">
-                <span id="line1"
-                    class="h-0.5 w-5 rounded-full bg-white dark:bg-slate-950 transition-all duration-300"></span>
-                <span id="line2"
-                    class="mt-1.5 h-0.5 w-5 origin-center rounded-full bg-white transition-all duration-300 dark:bg-slate-950"></span>
-                <span id="line3"
-                    class="mt-1.5 h-0.5 w-5 origin-center rounded-full bg-white transition-all duration-300 dark:bg-slate-950"></span>
+                class="relative z-[110] flex h-10 w-10 flex-col items-center justify-center rounded-full bg-slate-950 md:hidden">
+                <span id="line1" class="h-0.5 w-5 rounded-full bg-white transition-all duration-300"></span>
+                <span id="line2" class="mt-1.5 h-0.5 w-5 rounded-full bg-white transition-all duration-300"></span>
+                <span id="line3" class="mt-1.5 h-0.5 w-5 rounded-full bg-white transition-all duration-300"></span>
             </button>
         </div>
 
         <div id="mobile-menu"
-            class="fixed inset-0 z-[100] flex translate-y-[-100%] flex-col items-center justify-center gap-8 bg-slate-900/95 opacity-0 backdrop-blur-3xl transition-all duration-700 ease-[italic] dark:bg-slate-950/98 md:hidden">
-            <a href="#home"
-                class="mobile-link text-5xl font-black italic tracking-tighter text-white/20 transition-all hover:text-vibrant hover:scale-110">HOME</a>
-            <a href="#projetos"
-                class="mobile-link text-5xl font-black italic tracking-tighter text-white/20 transition-all hover:text-vibrant hover:scale-110">WORKS</a>
-            <a href="#contato"
-                class="mobile-link group flex items-center gap-4 text-2xl font-bold text-vibrant uppercase tracking-widest">
-                Falar agora <span class="h-px w-12 bg-vibrant"></span>
-            </a>
+            class="fixed inset-0 z-[100] flex translate-y-[-100%] flex-col items-center justify-center gap-8 bg-slate-900/95 opacity-0 backdrop-blur-3xl transition-all duration-500 md:hidden">
+            <a href="#home" class="mobile-link text-4xl font-black italic text-white">Início</a>
+            <a href="#sobre" class="mobile-link text-4xl font-black italic text-white">Sobre mim</a>
+            <a href="#projetos" class="mobile-link text-4xl font-black italic text-white">Projetos</a>
+            <a href="#skills" class="mobile-link text-4xl font-black italic text-white">Skills</a>
+            <a href="#contato" class="mobile-link text-2xl font-bold text-white uppercase tracking-widest">Contato</a>
         </div>
     </nav>
 
+    <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center px-6 pt-32">
+        <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+            <div>
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
+                    Desenvolvedor Web em formação
+                </p>
+
+                <h1 class="text-4xl font-black leading-tight md:text-6xl">
+                    Olá, me chamo <span class="text-slate-700">Nícolas</span>.
+                    <br>
+                    Construo projetos para web.
+                </h1>
+
+                <p class="mt-6 max-w-xl text-lg text-slate-600">
+                    Sou estudante de Análise e Desenvolvimento de Sistemas e estou desenvolvendo
+                    projetos para fortalecer meu portfólio como desenvolvedor.
+                </p>
+
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#projetos"
+                        class="rounded-full bg-slate-900 px-8 py-3 font-bold text-white transition hover:scale-105">
+                        Ver projetos
+                    </a>
+                    <a href="#contato"
+                        class="rounded-full border border-slate-300 px-8 py-3 font-bold text-slate-800 transition hover:bg-white">
+                        Entrar em contato
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex h-[320px] w-[320px] items-center justify-center rounded-[2rem] bg-slate-800 text-white shadow-2xl">
+                    <span class="text-2xl font-bold">Foto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+            <h2 class="text-3xl font-black md:text-4xl">Sobre mim</h2>
+            <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+                Tenho focado meus estudos em desenvolvimento web, com interesse em front-end,
+                back-end e construção de projetos práticos. Estou desenvolvendo meu portfólio
+                para mostrar minha evolução, minhas habilidades e os projetos que venho criando.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="px-6 py-24 bg-white">
+        <div class="mx-auto max-w-6xl">
+            <h2 class="text-3xl font-black md:text-4xl">Projetos</h2>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+                <article class="rounded-3xl border border-slate-200 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="mb-4 h-40 rounded-2xl bg-slate-200"></div>
+                    <h3 class="text-xl font-bold">Projeto 1</h3>
+                    <p class="mt-3 text-slate-600">
+                        Descrição curta do projeto, tecnologias usadas e objetivo.
+                    </p>
+                    <div class="mt-4 flex gap-2 flex-wrap">
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium">HTML</span>
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium">CSS</span>
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium">JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="rounded-3xl border border-slate-200 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="mb-4 h-40 rounded-2xl bg-slate-200"></div>
+                    <h3 class="text-xl font-bold">Projeto 2</h3>
+                    <p class="mt-3 text-slate-600">
+                        Descrição curta do projeto, tecnologias usadas e objetivo.
+                    </p>
+                    <div class="mt-4 flex gap-2 flex-wrap">
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium">Tailwind</span>
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium">JS</span>
+                    </div>
+                </article>
+
+                <article class="rounded-3xl border border-slate-200 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="mb-4 h-40 rounded-2xl bg-slate-200"></div>
+                    <h3 class="text-xl font-bold">Projeto 3</h3>
+                    <p class="mt-3 text-slate-600">
+                        Descrição curta do projeto, tecnologias usadas e objetivo.
+                    </p>
+                    <div class="mt-4 flex gap-2 flex-wrap">
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium">Flask</span>
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium">Python</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+            <h2 class="text-3xl font-black md:text-4xl">Skills</h2>
+
+            <div class="mt-10 flex flex-wrap gap-4">
+                <span class="rounded-full bg-slate-900 px-5 py-3 font-semibold text-white">HTML</span>
+                <span class="rounded-full bg-slate-900 px-5 py-3 font-semibold text-white">CSS</span>
+                <span class="rounded-full bg-slate-900 px-5 py-3 font-semibold text-white">JavaScript</span>
+                <span class="rounded-full bg-slate-900 px-5 py-3 font-semibold text-white">Tailwind CSS</span>
+                <span class="rounded-full bg-slate-900 px-5 py-3 font-semibold text-white">Python</span>
+                <span class="rounded-full bg-slate-900 px-5 py-3 font-semibold text-white">Flask</span>
+                <span class="rounded-full bg-slate-900 px-5 py-3 font-semibold text-white">Git/GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="px-6 py-24 bg-slate-900 text-white">
+        <div class="mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-black md:text-4xl">Contato</h2>
+            <p class="mt-4 text-lg text-slate-300">
+                Quer conversar sobre projetos, estágio ou oportunidades?
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#" class="rounded-full bg-white px-8 py-3 font-bold text-slate-950">LinkedIn</a>
+                <a href="#" class="rounded-full border border-white/30 px-8 py-3 font-bold text-white">GitHub</a>
+                <a href="mailto:seuemail@email.com"
+                    class="rounded-full border border-white/30 px-8 py-3 font-bold text-white">
+                    E-mail
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 bg-slate-950 px-6 py-6 text-center text-sm text-slate-400">
+        © 2026 Nícolas.dev — Todos os direitos reservados.
+    </footer>
 
     <script src="./scripts/script.js"></script>
 </body>
-
 </html>
