@@ -30,5 +30,22 @@ function toggleMenu() {
     }
 }
 
+let lastScroll = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // Scroll pra baixo → esconder navbar
+    navbar.classList.add("-translate-y-full");
+  } else {
+    // Scroll pra cima → mostrar navbar
+    navbar.classList.remove("-translate-y-full");
+  }
+
+  lastScroll = currentScroll;
+});
+
 btn.addEventListener('click', toggleMenu);
 links.forEach(link => link.addEventListener('click', toggleMenu));
