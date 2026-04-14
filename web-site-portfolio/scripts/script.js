@@ -47,5 +47,17 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
+const botaoCurriculo = document.getElementById("btn-curriculo")
+botaoCurriculo.addEventListener("click", baixarCurriculo)
+
+function baixarCurriculo() {
+  const link = document.createElement("a");
+  link.href = "./assets/Curriculo_NicolasGerbes.pdf";
+  link.download = "Curriculo-NicolasGerbes.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 btn.addEventListener('click', toggleMenu);
 links.forEach(link => link.addEventListener('click', toggleMenu));
