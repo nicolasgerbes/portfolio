@@ -1,0 +1,21 @@
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}   
+
+.skills-list span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+}
+
+.skills-list i {
+  font-size: 50px;
+}       
+
+.skills-list span:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
