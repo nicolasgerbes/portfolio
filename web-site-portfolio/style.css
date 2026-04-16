@@ -1,3 +1,14 @@
+.tec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tec span{
+    font-size: 20px;
+}
+
+/* Lista de HardSkills */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
