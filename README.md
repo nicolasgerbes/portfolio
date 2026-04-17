@@ -52,5 +52,41 @@ git clone https://github.com/nicolasgerbes/web-site-portfolio.git
 cd web-site-portfolio
 ```
 
-### 👀 Visualizar:
-Por ser um projeto front-end puro, basta abrir o arquivo index.html em qualquer navegador moderno. Para uma melhor experiência de desenvolvimento, recomenda-se o uso da extensão Live Server no VS Code.
+---
+
+### 👀 Como Visualizar
+Para explorar o projeto localmente, escolha uma das opções abaixo:
+
+- Visualização Rápida (Standard)
+Basta abrir o ficheiro index.html diretamente em qualquer navegador moderno (Chrome, Firefox, Edge ou Safari).
+
+- Ambiente de Desenvolvimento (Recomendado)
+Para tirar partido do carregamento em tempo real (Hot Reload), utilize a extensão Live Server no VS Code:
+
+- Abra a pasta do projeto no VS Code.
+
+- Clique no botão Go Live na barra de status (canto inferior direito).
+
+---
+ 
+### 🔄 Evolução Contínua
+Acredito que o aprendizado no desenvolvimento de software nunca estagna. Por isso, este repositório está em constante atualização. Novos projetos, refatorações de código e implementações de tecnologias emergentes são integrados regularmente para garantir que este espaço reflita sempre o meu estado atual de competência técnica e criatividade.
+
+---
+
+### 🏁 Conclusão
+Este portfólio é mais do que apenas uma vitrine de projetos; é um reflexo da minha jornada e evolução como desenvolvedor. Ele foi projetado para ser uma plataforma sólida, escalável e que demonstra minha atenção aos detalhes e ao design focado na experiência do usuário.
+
+<div align="center">
+<img src="https://img.shields.io/badge/Front--End-000000?style=for-the-badge&logo=html5&logoColor=white" alt="Front-End">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+
+<img src="https://img.shields.io/badge/Mobile-121212?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Mobile">
+
+<img src="https://img.shields.io/badge/Back--End-232d3b?style=for-the-badge&logo=node.js&logoColor=white" alt="Back-End">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+
+<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
+
+<img src="https://img.shields.io/badge/Full--Stack-FF4B2B?style=for-the-badge&logo=lightning&logoColor=white" alt="Full Stack">
+</div>
